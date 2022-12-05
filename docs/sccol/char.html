@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>CHAR - SCCOL Docs</title>
+		<link rel="stylesheet" type="text/css" href="../../commonStyles.css">
+		<style>
+			html{
+				overflow-y: auto;
+			}
+			p, big {
+				margin: 4px;
+				white-space: pre-wrap;
+				margin-bottom: 0.5em;
+			}
+			big{
+				
+			}
+			.menu{
+				transition: all 1s ease;
+			}
+			li{
+				margin-left: 1em;
+			}
+			a {
+				cursor: url('../../link.png'), auto;
+			}
+		</style>
+		<script src="../../cmds.js"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body onload="Start()">
+		<div class="main-container">
+			@<a href="/docs/sccol/#COMMANDS">Commands</a>
+			<h1>CHAR {num} (index)</h1>
+			<hr>
+			<big>Description:</big>
+			<p> Converts a real number to a character (Unicode value), or gets a character at position (index) in a string in the specified memory buffer block.</p>
+			<big>Arguments:</big>
+			<p> <i>INT {num}</i> - the specified memory block number to get the value from and assign to.</p>
+			<p> <i>INT (index)</i> - the optionally specified character index to retrieve from a string (if a string is given).</p>
+			<hr>
+			<big>Example of usage:</big>
+			<blockquote class=quote>SET 0 83;
+CHAR 0;
+SET 1 SCP;
+CHAR 1 1;
+SAY %^0%^1P;
+</blockquote>
+			<big>Output:</big>
+			<blockquote class=quote>SCP</blockquote>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>JS - SCCOL Docs</title>
+		<link rel="stylesheet" type="text/css" href="../../commonStyles.css">
+		<style>
+			html{
+				overflow-y: auto;
+			}
+			p, big {
+				margin: 4px;
+				white-space: pre-wrap;
+				margin-bottom: 0.5em;
+			}
+			big{
+				
+			}
+			.menu{
+				transition: all 1s ease;
+			}
+			li{
+				margin-left: 1em;
+			}
+			a {
+				cursor: url('../../link.png'), auto;
+			}
+		</style>
+		<script src="../../cmds.js"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body onload="Start()">
+		<div class="main-container">
+			@<a href="/docs/sccol/#COMMANDS">Commands</a>
+			<h1>JS</h1>
+			<hr>
+			<big>Description:</big>
+			<p> Initiates JavaScript mode. All input will then be interpreted as JavaScript code. To exit - use the <a href="sccol.html" class=quote>SCCOL</a> command.</p>
+			<hr>
+			<big>Example of usage:</big>
+			<blockquote class=quote>JS
+**command submit**</blockquote>
+			<blockquote class=quote>Print("This text is being printed through JavaScript mode.");</blockquote>
+			<big>Output:</big>
+			<blockquote class=quote>This text is being printed through JavaScript mode.</blockquote>
+			<hr>
+			<big>Note:</big>
+			<p><span class=quote>JS</span> should be written and executed as a single command. Switching to JavaScript mode mid-execution will not work. <a href="internal.html"><span class=quote>INTERNAL</span></a> should be used instead.</p>
+			<p>For more info on the console JavaScript functions read <a href="javascript.html">this</a>.</p>
+		</div>
+	</body>
+</html>

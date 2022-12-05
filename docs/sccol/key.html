@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<title>KEY - SCCOL Docs</title>
+		<link rel="stylesheet" type="text/css" href="../../commonStyles.css">
+		<style>
+			html{
+				overflow-y: auto;
+			}
+			p, big {
+				margin: 4px;
+				white-space: pre-wrap;
+				margin-bottom: 0.5em;
+			}
+			big{
+				
+			}
+			.menu{
+				transition: all 1s ease;
+			}
+			li{
+				margin-left: 1em;
+			}
+			a {
+				cursor: url('../../link.png'), auto;
+			}
+		</style>
+		<script src="../../cmds.js"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body onload="Start()">
+		<div class="main-container">
+			@<a href="/docs/sccol/#COMMANDS">Commands</a>
+			<h1>KEY {num}</h1>
+			<hr>
+			<big>Description:</big>
+			<p> Waits for a keypress, then sets the Unicode value of the keypress to the specified memory buffer block. You may use the <a href="char.html" class=quote>CHAR</a> command to convert the value to a character.</p>
+			<big>Arguments:</big>
+			<p> <i>INT {num}</i> - the specified memory block number to assign to.</p>
+			<hr>
+			<big>Example of usage:</big>
+			<blockquote class=quote>KEY 0;
+SAY %^0;</blockquote>
+			<big>Output:</big>
+			<blockquote class=quote>**user input**</blockquote>
+		</div>
+	</body>
+</html>

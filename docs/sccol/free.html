@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>FREE - SCCOL Docs</title>
+		<link rel="stylesheet" type="text/css" href="../../commonStyles.css">
+		<style>
+			html{
+				overflow-y: auto;
+			}
+			p, big {
+				margin: 4px;
+				white-space: pre-wrap;
+				margin-bottom: 0.5em;
+			}
+			big{
+				
+			}
+			.menu{
+				transition: all 1s ease;
+			}
+			li{
+				margin-left: 1em;
+			}
+			a {
+				cursor: url('../../link.png'), auto;
+			}
+		</style>
+		<script src="../../cmds.js"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body onload="Start()">
+		<div class="main-container">
+			@<a href="/docs/sccol/#COMMANDS">Commands</a>
+			<h1>FREE {num/start/proc} (end)</h1>
+			<hr>
+			<big>Description:</big>
+			<p> Frees specified process, a memory buffer block, or a range of them, previously set by the <a href="set.html" class=quote>SET</a> command - attempting to access the freed memory buffer blocks or procedures may result in an undefined value error.</p>
+			<big>Arguments:</big>
+			<p> <i>INT {num/start/proc}</i> - the specified memory block number to free, or a procedure. If the end value is specified, acts as the beginning of a range.</p>
+			<p> <i>INT (end)</i> - the optionally specified memory block range end. Specifying this will free all memory buffer blocks from the start to the end inclusive.</p>
+			<hr>
+			<big>Example of usage:</big>
+			<blockquote class=quote>SET 0 32;
+FREE 0;
+MEM;</blockquote>
+			<big>Output:</big>
+			<blockquote class=quote> </blockquote>
+		</div>
+	</body>
+</html>

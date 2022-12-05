@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>SIN - SCCOL Docs</title>
+		<link rel="stylesheet" type="text/css" href="../../commonStyles.css">
+		<style>
+			html{
+				overflow-y: auto;
+			}
+			p, big {
+				margin: 4px;
+				white-space: pre-wrap;
+				margin-bottom: 0.5em;
+			}
+			big{
+				
+			}
+			.menu{
+				transition: all 1s ease;
+			}
+			li{
+				margin-left: 1em;
+			}
+			a {
+				cursor: url('../../link.png'), auto;
+			}
+		</style>
+		<script src="../../cmds.js"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body onload="Start()">
+		<div class="main-container">
+			@<a href="/docs/sccol/#COMMANDS">Commands</a>
+			<h1>SIN {num}</h1>
+			<hr>
+			<big>Description:</big>
+			<p> Sets the specified memory buffer block value in radians to its sine value. You may use <a href="d2r.html" class=quote>%^D2R</a> to convert degrees to radians.</p>
+			<big>Arguments:</big>
+			<p> <i>INT {num}</i> - the specified memory block number to get the value from and assign to.</p>
+			<hr>
+			<big>Example of usage:</big>
+			<blockquote class=quote>SET 0 (%^PI $/ 2);
+SIN 0;
+SAY %^0;</blockquote>
+			<big>Output:</big>
+			<blockquote class=quote>1</blockquote>
+		</div>
+	</body>
+</html>

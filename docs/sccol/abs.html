@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<title>ABS - SCCOL Docs</title>
+		<link rel="stylesheet" type="text/css" href="../../commonStyles.css">
+		<style>
+			html{
+				overflow-y: auto;
+			}
+			p, big {
+				margin: 4px;
+				white-space: pre-wrap;
+				margin-bottom: 0.5em;
+			}
+			big{
+				
+			}
+			.menu{
+				transition: all 1s ease;
+			}
+			li{
+				margin-left: 1em;
+			}
+			a {
+				cursor: url('../../link.png'), auto;
+			}
+		</style>
+		<script src="../../cmds.js"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body onload="Start()">
+		<div class="main-container">
+			@<a href="/docs/sccol/#COMMANDS">Commands</a>
+			<h1>ABS {num}</h1>
+			<hr>
+			<big>Description:</big>
+			<p> Sets the specified memory buffer block to its absolute value - if value is less than 0, will return the same value, but <span class=quote>..$*-1)</span>.</p>
+			<big>Arguments:</big>
+			<p> <i>INT {num}</i> - the specified memory block number to get the value from and assign to.</p>
+			<hr>
+			<big>Example of usage:</big>
+			<blockquote class=quote>SET 0 -32;
+ABS 0;
+SAY %^0;</blockquote>
+			<big>Output:</big>
+			<blockquote class=quote>32</blockquote>
+		</div>
+	</body>
+</html>

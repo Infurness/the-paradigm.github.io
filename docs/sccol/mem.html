@@ -1,0 +1,54 @@
+<html>
+	<head>
+		<title>MEM - SCCOL Docs</title>
+		<link rel="stylesheet" type="text/css" href="../../commonStyles.css">
+		<style>
+			html{
+				overflow-y: auto;
+			}
+			p, big {
+				margin: 4px;
+				white-space: pre-wrap;
+				margin-bottom: 0.5em;
+			}
+			big{
+				
+			}
+			.menu{
+				transition: all 1s ease;
+			}
+			li{
+				margin-left: 1em;
+			}
+			a {
+				cursor: url('../../link.png'), auto;
+			}
+		</style>
+		<script src="../../cmds.js"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body onload="Start()">
+		<div class="main-container">
+			@<a href="/docs/sccol/#COMMANDS">Commands</a>
+			<h1>MEM (proc)</h1>
+			<hr>
+			<big>Description:</big>
+			<p> Displays the memory buffer, all declared procedures, or a single one's code on screen, if the procedure is specified.</p>
+			<big>Arguments:</big>
+			<p> <i>PROCEDURE (proc)</i> - the optionally specified procedure to display the code of.</p>
+			<hr>
+			<big>Example of usage:</big>
+			<blockquote class=quote>SET 0 SCP;
+PROC MAIN;
+  SAY Secure. Contain. Protect.;
+END;
+MEM;
+MEM MAIN;</blockquote>
+			<big>Output:</big>
+			<blockquote class=quote>0: SCP
+MAIN;
+MAIN:
+ SAY Secure. Contain. Protect.;</blockquote>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>SCCOL - SCCOL Docs</title>
+		<link rel="stylesheet" type="text/css" href="../../commonStyles.css">
+		<style>
+			html{
+				overflow-y: auto;
+			}
+			p, big {
+				margin: 4px;
+				white-space: pre-wrap;
+				margin-bottom: 0.5em;
+			}
+			big{
+				
+			}
+			.menu{
+				transition: all 1s ease;
+			}
+			li{
+				margin-left: 1em;
+			}
+			a {
+				cursor: url('../../link.png'), auto;
+			}
+		</style>
+		<script src="../../cmds.js"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body onload="Start()">
+		<div class="main-container">
+			@<a href="/docs/sccol/#COMMANDS">Commands</a>
+			<h1>SCCOL</h1>
+			<hr>
+			<big>Description:</big>
+			<p> Initiates SCCOL mode. All input will then be interpreted as SCCOL commands. Is typically used to switch from another mode back to SCCOL.</p>
+			<hr>
+			<big>Example of usage:</big>
+			<blockquote class=quote>JS;
+**command submit**</blockquote>
+			<blockquote class=quote>Print("This text is being printed through JavaScript mode.");
+**command submit**</blockquote>
+			<blockquote class=quote>SCCOL;
+**command submit**</blockquote>
+			<blockquote class=quote>SAY This text is being printed through SCCOL mode.;</blockquote>
+			<big>Output:</big>
+			<blockquote class=quote>This text is being printed through JavaScript mode.
+This text is being printed through SCCOL mode.</blockquote>
+		</div>
+	</body>
+</html>

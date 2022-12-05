@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>INT - SCCOL Docs</title>
+		<link rel="stylesheet" type="text/css" href="../../commonStyles.css">
+		<style>
+			html{
+				overflow-y: auto;
+			}
+			p, big {
+				margin: 4px;
+				white-space: pre-wrap;
+				margin-bottom: 0.5em;
+			}
+			big{
+				
+			}
+			.menu{
+				transition: all 1s ease;
+			}
+			li{
+				margin-left: 1em;
+			}
+			a {
+				cursor: url('../../link.png'), auto;
+			}
+		</style>
+		<script src="../../cmds.js"></script>
+		<script src="navbar.js"></script>
+	</head>
+	<body onload="Start()">
+		<div class="main-container">
+			@<a href="/docs/sccol/#COMMANDS">Commands</a>
+			<h1>INT {num}</h1>
+			<hr>
+			<big>Description:</big>
+			<p> Converts a floating point number or a character to an integer (Unicode value) in the specified memory buffer block.</p>
+			<big>Arguments:</big>
+			<p> <i>INT {num}</i> - the specified memory block number to get the value from and assign to.</p>
+			<hr>
+			<big>Example of usage:</big>
+			<blockquote class=quote>SET 0 %^PI;
+INT 0;
+SET 1 A;
+INT 1;
+MEM;</blockquote>
+			<big>Output:</big>
+			<blockquote class=quote>0: 3
+1: 65</blockquote>
+		</div>
+	</body>
+</html>
